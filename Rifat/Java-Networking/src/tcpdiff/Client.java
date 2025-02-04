@@ -1,7 +1,6 @@
 package tcpdiff;
 
 import java.util.Scanner;
-
 import util.SocketWrapper;
 
 public class Client {

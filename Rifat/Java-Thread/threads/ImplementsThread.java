@@ -26,7 +26,8 @@ class NewThread1 implements Runnable {
 
 public class ImplementsThread {
     public static void main(String[] args) throws Exception {
-        new NewThread1();
+        NewThread1 ss = new NewThread1(); // alternative : new NewTHred1(); 
+       //  ss.t.join();
         for (int i = 500; i > 0; i--) {
             System.out.println("Main Thread: " + i);
             Thread.sleep(2000);

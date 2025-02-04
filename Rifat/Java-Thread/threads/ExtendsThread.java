@@ -6,8 +6,6 @@ class NewThread2 extends Thread {
         super("Extends Thread");
         //start();
     }
-
-    // This is the entry point for the thread.
     @Override
     public void run() {
         System.out.println(Thread.currentThread().getName());

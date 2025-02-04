@@ -33,7 +33,7 @@ class ThreadCounterSyncBlock implements Runnable {
     }
 
     public void run() {
-        synchronized(this) {
+        synchronized(sharedCounter) {
          sharedCounter.count();
         }
     }

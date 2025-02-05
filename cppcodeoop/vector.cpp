@@ -11,8 +11,10 @@ public:
     Vector(int x = 0, int y = 0, int z = 0) : x(x), y(y), z(z) {}
 
     // Copy Constructor
-    Vector(const Vector& v) : x(v.x), y(v.y), z(v.z) {
-        cout << "Copy constructor called" << endl;
+    Vector(const Vector &other) {
+        x = other.x;
+        y = other.y;
+        z = other.z;
     }
 
     // Assignment Operator
@@ -29,6 +31,15 @@ public:
     Vector operator+(const Vector& v) const {
         return Vector(x + v.x, y + v.y, z + v.z);
     }
+
+//     Vector operator+(const Vector& v) const {
+//     Vector temp; // Create a temporary vector
+//     temp.x = x + v.x;
+//     temp.y = y + v.y;
+//     temp.z = z + v.z;
+//     return temp;
+// }
+
 
     // Overload += operator (Vector += Vector)
     Vector& operator+=(const Vector& v) {

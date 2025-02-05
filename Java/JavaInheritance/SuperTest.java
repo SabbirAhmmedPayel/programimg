@@ -1,3 +1,4 @@
+package Java.JavaInheritance;
 class BoxWeightNew extends Box {
     double weight;
 

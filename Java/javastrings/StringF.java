@@ -1,3 +1,5 @@
+package Java.javastrings ; 
+
 public class StringF {
 
     public static void main(String[] args) {

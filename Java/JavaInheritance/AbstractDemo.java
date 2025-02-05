@@ -1,3 +1,4 @@
+package Java.JavaInheritance;
 abstract class S {
     // abstract method
     abstract void call();

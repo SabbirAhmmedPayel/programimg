@@ -1,3 +1,4 @@
+package Java.JavaInheritance;
 class C {
     int i;
 

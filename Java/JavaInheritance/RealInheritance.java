@@ -1,3 +1,4 @@
+package Java.JavaInheritance;
 class Box {
     double width, height, depth;
 

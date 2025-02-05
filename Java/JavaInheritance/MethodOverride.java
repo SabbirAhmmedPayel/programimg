@@ -1,3 +1,4 @@
+package Java.JavaInheritance;
 class Base {
     int a;
 

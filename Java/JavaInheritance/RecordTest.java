@@ -1,3 +1,4 @@
+package Java.JavaInheritance;
 import java.util.HashMap;
 
 record MyPoint(int x, int y) {   

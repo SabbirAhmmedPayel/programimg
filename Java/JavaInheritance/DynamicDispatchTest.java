@@ -1,3 +1,4 @@
+package Java.JavaInheritance;
 class P {
     void call() {
         System.out.println("Inside P's call method");

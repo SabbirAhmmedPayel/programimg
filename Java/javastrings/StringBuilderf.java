@@ -1,4 +1,6 @@
 
+package Java.javastrings ; 
+
 public class StringBuilderf{
 
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package Java.JavaInheritance;
+
 class AA {
     private int a;
 
@@ -76,10 +78,12 @@ public class InheritanceVarDemo {
 
     public static void main(String[] args) {
         var a = new AA();
+        a.printClass(); // AA 
         var b = new BB();
+        b.printClass(); // BB
         var c = new CC();
         var r = a;
-        r.printClass(); // AA
+        r.printClass(); // prints AA
         r = b;
         r.printClass(); // BB
         r = c;
@@ -90,7 +94,17 @@ public class InheritanceVarDemo {
         var z = getObject(2);
 
         System.out.println(x.getA());
+
         // System.out.println(y.getB()); // Error, type of y is AA
         // System.out.println(z.getC()); // Error, type of z is AA
+
+        // Correct casting to access subclass methods
+        if (y instanceof BB) {
+            System.out.println(((BB) y).getB()); // Works because y is actually of type BB
+        }
+
+        if (z instanceof CC) {
+            System.out.println(((CC) z).getC()); // Works because z is actually of type CC
+        }
     }
 }

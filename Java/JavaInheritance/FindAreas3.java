@@ -1,3 +1,4 @@
+package Java.JavaInheritance;
 abstract class Fig {
     double d1, d2;
 

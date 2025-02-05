@@ -1,3 +1,4 @@
+package Java.JavaInheritance;
 class M {
     int i;
     private int j;

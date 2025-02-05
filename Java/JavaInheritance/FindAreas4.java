@@ -1,3 +1,4 @@
+package Java.JavaInheritance;
 abstract class Fig2 {
     abstract double area(double a, double b);
 }

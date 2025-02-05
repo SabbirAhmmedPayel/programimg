@@ -1,3 +1,5 @@
+package Java.javastrings ; 
+
 import java.util.StringTokenizer;
 
 public class StringTokenizerE {
@@ -5,7 +7,7 @@ public class StringTokenizerE {
     public static void main(String[] args) {
 
         // Create a StringTokenizer object
-        String str = "Hello, Java; StringTokenizer Example!";
+        String str = "Hello, Java; StringTo,kenizer Example!";
         StringTokenizer tokenizer = new StringTokenizer(str, " ,;!");
 
         // Count number of tokens

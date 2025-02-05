@@ -1,19 +1,17 @@
-class Figure {
+package Java.JavaInheritance;
+abstract class Figure2 {
     double d1, d2;
 
-    Figure(double a, double b) {
+    Figure2(double a, double b) {
         this.d1 = a;
         this.d2 = b;
     }
 
-    public double area() {
-        System.out.println("Area for Figure is undefined");
-        return 0;
-    }
+    abstract double area();
 }
 
-class Rectangle extends Figure {
-    Rectangle(double a, double b) {
+class Rectangle2 extends Figure2 {
+    Rectangle2(double a, double b) {
         super(a, b);
     }
 
@@ -24,8 +22,8 @@ class Rectangle extends Figure {
     }
 }
 
-class Triangle extends Figure {
-    Triangle(double a, double b) {
+class Triangle2 extends Figure2 {
+    Triangle2(double a, double b) {
         super(a, b);
     }
 
@@ -36,16 +34,12 @@ class Triangle extends Figure {
     }
 }
 
-public class FindAreas {
+public class FindAreas2 {
     public static void main(String[] args) {
-        Figure f = new Figure(10, 10);
-        Rectangle r = new Rectangle(9, 5);
-        Triangle t = new Triangle(10, 8);
+        Rectangle2 r = new Rectangle2(9, 5);
+        Triangle2 t = new Triangle2(10, 8);
 
-        Figure ref;
-
-        ref = f;
-        System.out.println("Area: " + ref.area());
+        Figure2 ref;
 
         ref = r;
         System.out.println("Area: " + ref.area());

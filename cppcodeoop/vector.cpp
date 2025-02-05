@@ -50,7 +50,7 @@ public:
     }
 
     // Overload + operator (Vector + int)
-    Vector operator+(int val) const {
+    Vector operator+(int val) {
         return Vector(x + val, y + val, z + val);
     }
 

@@ -1,3 +1,5 @@
+package zzjavapractice;
+
 public class ParallelSum {
     
     private static int totalSum = 0;
@@ -38,8 +40,4 @@ public class ParallelSum {
 
         System.out.println("Total Sum: " + totalSum);
     }
-}public class Main {
-	public static void main(String[] args) {
-		
-	}
 }

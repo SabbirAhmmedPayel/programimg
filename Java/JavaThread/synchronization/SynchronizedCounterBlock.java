@@ -1,5 +1,6 @@
 package synchronization;
 
+
 class SharedCounter2 {
     private int counter;
 

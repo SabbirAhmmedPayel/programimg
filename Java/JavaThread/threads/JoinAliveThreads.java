@@ -1,4 +1,3 @@
-package threads;
 
 public class JoinAliveThreads {
     public static void main(String[] args) {

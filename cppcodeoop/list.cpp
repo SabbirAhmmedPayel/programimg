@@ -11,10 +11,11 @@ private:
 
 public:
     // Constructor
-    myLIST(const char* n, const string& addr, int s) : size(s) {
+    myLIST(const char* n, const string& addr, int s) {
         name = new char[strlen(n) + 1];
         strcpy(name, n);
         address = addr;
+        size = s ;
         arr = new int[size]();  // Initialize array with zeros
     }
 

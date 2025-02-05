@@ -1,4 +1,3 @@
-package threads;
 
 class NewThread1 implements Runnable {
     Thread t;
@@ -28,6 +27,7 @@ public class ImplementsThread {
     public static void main(String[] args) throws Exception {
         NewThread1 ss = new NewThread1(); // alternative : new NewTHred1(); 
        //  ss.t.join();
+      
         for (int i = 500; i > 0; i--) {
             System.out.println("Main Thread: " + i);
             Thread.sleep(2000);

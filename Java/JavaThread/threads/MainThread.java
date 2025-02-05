@@ -1,4 +1,3 @@
-package threads;
 
 public class MainThread {
     public static void main(String[] args) {
@@ -10,7 +9,7 @@ public class MainThread {
         try {
             for (int i = 10; i > 0; i--) {
                 System.out.println("Main Thread: " + i);
-                Thread.sleep(2000);
+                Thread.sleep(1000);
             }
         } catch (InterruptedException e) {
             System.out.println("Main thread interrupted");

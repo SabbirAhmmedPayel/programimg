@@ -1,4 +1,3 @@
-package tcpsimple;
 
 import java.io.*;
 import java.net.ServerSocket;

@@ -1,4 +1,3 @@
-package threads;
 
 class SumThread implements Runnable {
 
@@ -41,3 +40,26 @@ public class MultipleThreadSum {
         System.out.println(t1.sum + t2.sum + t3.sum + t4.sum);
     }
 }
+
+//using for loop
+
+//   // Define the number of threads and the range for each
+//   int numThreads = 4;
+//   int rangePerThread = 2500; // Total sum range is 10000, divide it into 4 parts (10000/4)
+//   SumThread[] threads = new SumThread[numThreads];
+
+//   // Create threads dynamically using a for loop
+//   for (int i = 0; i < numThreads; i++) {
+//       int start = i * rangePerThread + 1;
+//       int end = (i + 1) * rangePerThread;
+//       threads[i] = new SumThread(start, end);
+//   }
+
+//   // Wait for all threads to finish
+//   try {
+//       for (int i = 0; i < numThreads; i++) {
+//           threads[i].t.join();
+//       }
+//   } catch (InterruptedException e) {
+//       System.out.println("Main thread Interrupted");
+//   }

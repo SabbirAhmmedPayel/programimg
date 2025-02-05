@@ -1,5 +1,3 @@
-package threads;
-
 
 public class  multishort{
     public static void main(String[] args) {

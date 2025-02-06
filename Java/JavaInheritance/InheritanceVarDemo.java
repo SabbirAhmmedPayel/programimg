@@ -63,7 +63,13 @@ class CC extends BB {
 }
 
 public class InheritanceVarDemo {
+<<<<<<< HEAD
     static AA getObject(int type) {
+=======
+
+
+static AA getObject(int type) {
+>>>>>>> f58129b (dad)
         switch (type) {
             case 0:
                 return new AA();
@@ -98,6 +104,11 @@ public class InheritanceVarDemo {
         // System.out.println(y.getB()); // Error, type of y is AA
         // System.out.println(z.getC()); // Error, type of z is AA
 
+<<<<<<< HEAD
+=======
+        System.out.println(((BB) y).getB()); 
+
+>>>>>>> f58129b (dad)
         // Correct casting to access subclass methods
         if (y instanceof BB) {
             System.out.println(((BB) y).getB()); // Works because y is actually of type BB

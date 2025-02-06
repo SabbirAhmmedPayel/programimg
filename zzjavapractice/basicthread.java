@@ -1,5 +1,10 @@
 package zzjavapractice;
 
+<<<<<<< HEAD
+=======
+import M;
+
+>>>>>>> f58129b (dad)
 class M {
 
     static int v;

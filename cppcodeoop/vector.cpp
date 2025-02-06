@@ -1,20 +1,36 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 class Vector {
 private:
-    int x, y, z;
+    int x, y, z; // Corrected: Declare z as part of the class
+    string name;
+    char *loc;
+    int *arr; // You had arr[] as a pointer, so we declare it correctly as a pointer
 
 public:
     // Constructor
-    Vector(int x = 0, int y = 0, int z = 0) : x(x), y(y), z(z) {}
+    Vector(int x = 0, int y = 0, int z = 0) : x(x), y(y), z(z), arr(nullptr) {}
 
     // Copy Constructor
     Vector(const Vector &other) {
         x = other.x;
         y = other.y;
         z = other.z;
+<<<<<<< HEAD
+=======
+        // Assuming arr is dynamically allocated, you should handle deep copy for it
+        if (other.arr != nullptr) {
+            arr = new int[10]; // Example size, change as needed
+            for (int i = 0; i < 10; ++i) {
+                arr[i] = other.arr[i];
+            }
+        } else {
+            arr = nullptr;
+        }
+>>>>>>> f58129b (dad)
     }
 
     // Assignment Operator
@@ -23,8 +39,24 @@ public:
             x = v.x;
             y = v.y;
             z = v.z;
+            // Deep copy of arr (assuming arr is dynamically allocated)
+            if (arr != nullptr) {
+                delete[] arr;
+            }
+            if (v.arr != nullptr) {
+                arr = new int[10]; // Example size
+                for (int i = 0; i < 10; ++i) {
+                    arr[i] = v.arr[i];
+                }
+            } else {
+                arr = nullptr;
+            }
         }
         return *this;
+    }
+
+      bool operator==(const Vector& v) const {
+        return (x == v.x && y == v.y && z == v.z && name == v.name);
     }
 
     // Overload + operator (Vector + Vector)
@@ -79,6 +111,13 @@ public:
     // Display function
     void display() const {
         cout << "(" << x << ", " << y << ", " << z << ")" << endl;
+    }
+
+    // Destructor to free allocated memory (if any)
+    ~Vector() {
+        if (arr != nullptr) {
+            delete[] arr;
+        }
     }
 };
 

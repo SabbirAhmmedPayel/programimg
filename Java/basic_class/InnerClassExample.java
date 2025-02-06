@@ -1,7 +1,10 @@
 package Java.basic_class;
 
+<<<<<<< HEAD
 import Java.basic_class.OuterClass.InnerClass;
 
+=======
+>>>>>>> f58129b (dad)
 class OuterClass {
     private String outerField = "Outer Field";
     private static String staticField = "Static Field"; 
